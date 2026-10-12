@@ -1,13 +1,13 @@
-package Ecuaciones_Lineales;
+package Ecuaciones_Lineales.Gauss;
 
-public class Lanzador_gaus {
+public class Lanzador_Gauss {
     public static void main(String[] args) {
         // 1. Mandamos llamar a la función que nos entrega la matriz aumentada [A | b]
 
-        double[][] matriz = defmatrizz.defmatriz();
+        double[][] matriz = Defmatriz.defmatriz();
         // 2. Aplicar la eliminación gaussiana (fase de triangulación superior)
         // Convierte los elementos debajo de la diagonal principal en ceros.
-        Gauss.eliminacionGaussiana(matriz);
+        Ecuaciones_Lineales.Gauss.Gauss.eliminacionGaussiana(matriz);
 
         // 3. Obtener los resultados mediante sustitución regresiva (la bajada)
         // Despeja las incógnitas de abajo hacia arriba a partir de la matriz triangular.
